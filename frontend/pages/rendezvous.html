@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prendre rendez-vous</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <h1>Prendre rendez-vous</h1>
+  <form id="appointment-form">
+    <label for="service">Type de service</label>
+    <select id="service" required>
+      <option value="">-- Choisissez --</option>
+      <option value="Séance individuelle">Séance individuelle</option>
+      <option value="Atelier créatif">Atelier créatif</option>
+      <option value="Enfant/Adolescent">Enfant / Adolescent</option>
+    </select>
+
+    <label for="date">Date et heure</label>
+    <input type="datetime-local" id="date" required>
+
+    <label for="notes">Commentaires (facultatif)</label>
+    <textarea id="notes" rows="3"></textarea>
+
+    <button type="submit">Valider</button>
+  </form>
+
+  <p id="confirmation-message"></p>
+
+  <script src="../scripts/appointment.js"></script>
+</body>
+</html>
